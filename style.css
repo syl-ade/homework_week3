@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #133133;
+  --primary-color: #4b878b;
   --secondary-color: #fff8f1;
   --additional-color: #1C474A;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -17,32 +17,35 @@ h3 {
 }
 
 h1 {
-  
-    font-size: 96px;
+  font-family: 'Oswald', sans-serif;
+    font-size: 100px;
   margin-bottom: 20px;
 }
 
 h2 {
+  font-family: 'Oswald', sans-serif;
   color: var(--secondary-color);
-  font-size: 48px;
+  font-size: 60px;
 
 }
 
 h3 {
+  font-family: 'Oswald', sans-serif;
   color: var(--secondary-color);
 
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 30px;
 
 }
 
 p {
-  color: var(--secondary-color);
+  font-family: 'EB Garamond', serif;
+   color: var(--secondary-color);
 
 
   padding: 20px;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 25px;
   line-height: 1.5;
   text-align: center;
   text-align: justify;
@@ -81,7 +84,7 @@ span.navbar-toggler-icon {
   width: 100%;
   height: 300px;
   position: relative;
-  box-shadow: 0 0 2px 1px  #133133 inset;
+  box-shadow: 0 0 2px 1px  var(--primary-color) inset;
 }
 .hero .content{
   position: absolute;
@@ -100,7 +103,7 @@ span.navbar-toggler-icon {
   background-image: url(https://images.pexels.com/photos/205420/pexels-photo-205420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) ;
 
   background-size: cover;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 .container {
   max-width: 800px;
@@ -108,11 +111,15 @@ span.navbar-toggler-icon {
 }
 
 .nav-link {
+  font-family: 'Oswald', sans-serif;
+  font-size: larger;
   color: var(--secondary-color);
+  border-radius: 5px;
 
 }
 .nav-link:hover {
   color: white;
+  background: #fff8f11c;
 }
 
 
@@ -134,16 +141,19 @@ span.navbar-toggler-icon {
   padding: 10px 10px;
   text-decoration: none;
 }
-
+.nav-link:hover{
+  background: ;
+  
+}
 .contact-link {
-  background: var(--additional-color);
+  background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
   height: 50px;
 }
 .contact-link:hover{
-  background: #f5f2fe;
-  color: var(--additional-color);
+  background:var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .about-link {
@@ -154,7 +164,7 @@ span.navbar-toggler-icon {
 
 }
 .about-link:hover{
-  background: var(--additional-color);
+  background: var(--primary-color);
   color: var(--secondary-color);
 }
 
@@ -202,17 +212,14 @@ span.navbar-toggler-icon {
   background: #f5f2fe;
   color: var(--primary-color);
 }
-#submit{
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  box-shadow: var(--box-shadow);
+
   
-}
+
 input.form-control{
   background: var(--secondary-color);
 }
 #submit:hover{
-  background:var(--additional-color);
+  background:var(--primary-color);
   color: var(--secondary-color);
   
 }
