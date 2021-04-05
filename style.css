@@ -5,10 +5,11 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-body {
- 
-  background-color: var(--primary-color);
+body{
+   background-color: var(--primary-color);
 }
+
+
 h1,
 h2,
 h3 {
@@ -50,6 +51,9 @@ img {
   max-width: 400px;
   max-height: 300px;
 }
+i {
+  color: var(--secondary-color);
+}
  .project-img  {
    background: var(--primary-color);
   box-shadow: var(--box-shadow);
@@ -58,10 +62,13 @@ img {
 a:focus,a:active {
   outline: none !important;
 }
-.hero{
-  
-  padding-top: 30px;
-  padding-bottom: 30px;
+div.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 
 }
 button.navbar-toggler {
@@ -143,7 +150,6 @@ span.navbar-toggler-icon {
   background: var(--secondary-color);
   color: var(--primary-color);
   box-shadow: var(--box-shadow);
-  border: 1px solid var(--primary-color);
   height: 50px;
 
 }
