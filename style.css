@@ -80,8 +80,8 @@ span.navbar-toggler-icon {
 .hero{
   width: 100%;
   height: 300px;
-  border: 1px solid var(--additional-color);
   position: relative;
+  box-shadow: 0 0 2px 1px  #133133 inset;
 }
 .hero .content{
   position: absolute;
