@@ -72,7 +72,7 @@ div.hero{
 
 }
 button.navbar-toggler {
-  background-color: var(--additional-color);
+  background: var(--additional-color);
 }
 span.navbar-toggler-icon {
   color: var(--secondary-color);
