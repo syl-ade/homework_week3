@@ -3,10 +3,13 @@
   --secondary-color: #fff8f1;
   --additional-color: #1C474A;
   --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  --primary-font: 'Oswald', sans-serif;
+  --secondary-font: 'EB Garamond', serif;
 }
 
 body{
    background-color: var(--primary-color);
+   margin: 20px 30px ;
 }
 
 
@@ -18,44 +21,46 @@ h3, h4, h5 {
 
 }
 
+.f-oswald{
+  font-family: var(--primary-font);
 
+}
 
 h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--primary-font);
   font-size: 70px;
 
 }
 
 h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--primary-font);
   text-align: center;
   font-size: 50px;
   margin-bottom: 5px;
 
 }
 .navbar{
-  padding-left: 150px;
-  padding-right: 150px;
+  padding: 0 50px;
 
   }
  
 .dropdown-menu{
   border: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--primary-font);
   background-color: var(--primary-color);
   position: relative;
   z-index:30;
-  
-
-
 }
+  
+  btn{
+    font-family: var(--primary-font);
+
+
+  }
+
 .dropdown-item{
   font-size: 15px;
   color: var(--secondary-color);
-
-  
-  
-
 }
 
 .dropdown-item:hover{
@@ -64,8 +69,8 @@ h3 {
 }
 
 
-p {
-  font-family: 'EB Garamond', serif;
+p{
+  font-family: var(--secondary-font);
    color: var(--secondary-color);
   padding: 20px;
   border-radius: 4px;
@@ -89,50 +94,55 @@ i {
 a:focus,a:active {
   outline: none !important;
 }
+
+
 div.hero{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 400px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin: 50px auto 120px;
 
 }
 div.projects{
 margin-top:60px;
 }
-.hero{
-  width: 100%;
-  height: 300px;
-  box-shadow: 0 0 2px 1px  var(--primary-color) inset;
-  
-}
+
 
 .container {
   max-width: 800px;
   }
-  .navbar-nav {
-    float: right;
-  }
- a.nav-link{
-    float: right;
-  }
-li.nav-item {
-  color: var(--secondary-color);
+ 
+ .navbar-nav{
+float: right;
+ }
 
-}
-.nav-link {
-  font-family: 'Oswald', sans-serif;
+.nav-link,
+.nav-item {
+  font-family: var(--primary-font);
   font-size: 15px;
-  color: var(--secondary-color);
+  color: #fffdfa86;
+  text-align: right;
   border-radius: 5px;
+  padding: 0 10px;
+  transition: color 0.15s ease-in-out;
+  background-color: 0.15s ease-in-out;
+  border-color: 0.15s ease-in-out;
 
 }
-.nav-link:hover {
+
+.btn-primary:focus {
+  background-color: var(--primary-color);
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+
+.nav-item:hover {
   color: white;
   background: #fff8f11c;
 }
+
 
 .my-photo {
   max-width: 300px;
@@ -146,7 +156,6 @@ li.nav-item {
 
 .navigation-links {
   display: flex;
-  margin-top: 25px;
   justify-content: center;
 }
 
@@ -156,12 +165,9 @@ li.nav-item {
   padding: 10px 10px;
   text-decoration: none;
 }
-.nav-link:hover{
-  background: ;
-  
-}
+
 .contact-link {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--primary-font);
 
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
@@ -175,7 +181,7 @@ li.nav-item {
 }
 
 .about-link {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--primary-font);
 
   background: var(--secondary-color);
   color: var(--primary-color);
@@ -196,6 +202,7 @@ li.nav-item {
 
 
 .email-link {
+  font-family: var(--secondary-font);
   display: flex;
   justify-content: center;
   color: var(--secondary-color);
@@ -253,23 +260,19 @@ input.form-control{
   min-width: 100px;
 }
 .hero h3,h4,h5 {
-  font-family: 'EB Garamond', serif;
+  font-family: var(--secondary-font);
 }
 
-#name{
-  font-size: 40px;
-}
 
-#navbarSupportedContent{
-  align-items: stretch;
-}
+
 @media (max-width: 766px){
+  .navbar{
+    padding: 0 30px;
+  }
   h2{
     margin-top: 40px;
  }
- .navbar {
-   margin-bottom: 20px;
- }
+ 
  div.navigation-links {
    margin-top: 10px;
    margin-bottom: 20px;
@@ -279,7 +282,15 @@ input.form-control{
  }
 }
 @media (max-width: 576px){
-  
+  .navbar{
+    padding: 0 30px;
+  }
+  p{
+    padding: 0;
+  }
+  div.hero {
+    padding: 0 30px ;
+  }
     h2{
     margin-top: 25px;
     font-size: 50px;
@@ -300,9 +311,7 @@ input.form-control{
     .my-photo{
       max-height: 160px;
     }
-    #name{
-    font-size: 27px;
-    }
+    
     h4,h5{
       font-size: 15px;
     }
@@ -329,5 +338,7 @@ input.form-control{
       margin-top: 20px;
       margin-bottom: 10px;
     }
-    
+    .container {
+      padding: 0 30px;
+    }
     }
