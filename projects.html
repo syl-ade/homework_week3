@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,132 +12,74 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Oswald&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/308f11efd8.js" crossorigin="anonymous"></script>
 
-    <title>Projects</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Oswald&display=swap" rel="stylesheet">
+    <title>Sylwia Aderek - about me</title>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-right ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/SA(2).png" class="img-fluid logo" alt="logo"/></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/">home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="about.html">about me</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle  active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  projects
-                </a>
-                
-                  <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item nav-item" href="projects.html#first-project">simple html</a>
-                    <a class="dropdown-item nav-item" href="projects.html#second-project">weather app with js</a>
-                                    <a class="dropdown-item nav-item" href="projects.html#third-project">react weather app</a>
-                  </div>
-                </li> 
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="images/SA(2).png" class="img-fluid logo" alt="logo"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="projects.html">projects</a>
+                            </li>
+                     
         </div>
-      </nav>
+      </div>
+    </nav>
     <div class="container mt-5">
-        <div class="projects d-flex justify-content-center mt-4">
-          <div class="row mt-5 mb-5" id="first-project">
-            <div
-            class="col-md d-flex justify-content-center  rounded-lg shadow-sm"
-            >
-            <img src="images/surfing.png" class="img-fluid rounded-3 pt-3 pb-3 project-img d-none d-md-block" alt="Man on a surfing board" />
-          </div>
-            <div class="col-md">
-              <h4 class="f-oswald">Introduction to coding</h4>
-              <p>
-                Description will appear soon...
-              </p>
-              <a
-                href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/000/138/423/original/Final_Project.html?1603987856"
-                class="btn btn-primary ms-4 first-project-link f-oswald "
-                target="blank"
-                >Check out my first project</a
-                >
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-fluid" src="images/surfing.png" alt="surfing project"/>
+                <h4>Introduction to coding</h4>
+                <p>Landing page with HTML/CSS and JS </p>
+                <a href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/000/138/423/original/Final_Project.html?1603987856" class="about-link btn-primary" target="_blank">See project</a>
+            
               </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="images/weatherapp.png" alt="weather app">
+                <h4>Weather App</h4>
+                <p>Weather project with Vanilla JS</p>
+                <a href="https://compassionate-carson-385e81.netlify.app/" class="about-link btn-primary" target="_blank">See project</a>
             </div>
-          </div>
-        <div class="projects d-flex justify-content-center ">
-    
-          <div class="row mt-5 mb-5" id="second-project">
-            <div class="col-md">
-            <h4 class="f-oswald">SheCodes Plus</h4>
-            <p>
-              Description will appear soon...
-    
-            </p>
-            <a
-              href="https://shecodes-app.netlify.app/"
-              class="btn btn-primary ms-4 second-project-link f-oswald"
-              target="blank"
-              >Check out my second project</a
-              >
-          </div>
-          <div
-          class="col-md d-flex justify-content-center shadow-sm "
-          >
-            <img
-              src="images/weatherapp.png"
-              class="img-fluid pt-3 pb-3 project-img d-none d-md-block"
-              alt="My first weather application - screenshot"
-            />
-          </div>
-        </div>
-      </div>
-        <div class="projects d-flex justify-content-center">
-    
-        <div class="row mt-5 mb-5" id="third-project">
-            <div
-              class="col-md d-flex justify-content-center rounded-lg shadow-sm"
-            >
-              <img src="images/weatherapp-react.PNG" class="img-fluid pt-3 pb-3 project-img d-none d-md-block" 
-              alt="My first weather react application - screenshot"
-              />
+            <div class="col-md-4">
+                <img class="img-fluid" src="images/weatherapp-react.png" alt="weather react app">
+                <h4>Weather React App</h4>
+                <p>Weather app with a search engine and live data</p>
+                <a href="https://skiesguys.netlify.app/" class="about-link btn-primary" target="_blank">See project</a>
+
             </div>
-            <div class="col-md me-4">
-              <h4 class="f-oswald">SheCodes React</h4>
-              <p>
-                Description will appear soon...
-    
-              </p>
-              <a
-              href="https://skiesguys.netlify.app"
-              class="btn btn-primary ms-4 third-project-link f-oswald"
-              target="blank"
-              >Check out my third project</a
-              >
-            </div>
-          </div>
+
         </div>
-        </div>
-      </div>
-</body>
-<hr>
+    </div>
+  </body>
+  <hr>
   <footer class="mt-5 mb-5">
     <div class="container d-flex justify-content-center">
       <a href="https://www.linkedin.com/in/sylwiaaderek/" target="blank"><i class="fab fa-linkedin fs-3 me-3" ></i></a>
    <a href="https://github.com/syl-ade" target="blank"> <i class="fab fa-github fs-3"></i></a>
+  </div>
+  <div class="d-flex justify-content-center mt-3 text-light">© 2021 Sylwia Aderek</div>
 
-</div>
-<div class= "d-flex justify-content-center mt-3 text-light">© 2021 Sylwia Aderek</div>
   </footer>
 </html>
