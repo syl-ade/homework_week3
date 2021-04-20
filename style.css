@@ -46,10 +46,7 @@ h4{
 .hero p{
   margin-bottom: 0;
 }
-.navbar{
-  padding: 0 30px;
 
-  }
  
 .dropdown-menu{
   border: none;
@@ -87,8 +84,7 @@ margin-bottom: 40px;
 
 p{
   font-family: var(--secondary-font);
-   color: var(--secondary-color);
-  padding: 20px;
+  color: var(--secondary-color);
   border-radius: 4px;
   font-size: 20px;
   line-height: 1.5;
@@ -238,8 +234,7 @@ h4{
 
 
 @media (max-width: 766px){
-  .navbar{
-    padding: 0 15px;
+  
   }
   h2{
     margin-top: 40px;
@@ -259,14 +254,13 @@ h4{
    margin-bottom: 20px;
  }
  
-}
+
 @media (max-width: 576px){
   .btn-dark{
     width: 70px;
     font-size: 11px;
   }
-  .navbar{
-    padding: 0 15px;
+
   }
   p{
     font-size: 18px;
@@ -277,9 +271,7 @@ margin-top: 20px;
   .btn-primary{
     margin-bottom: 20px;
   }
-  div.hero {
-    padding: 0 15px ;
-  }
+  
     h2{
     margin-top: 25px;
     font-size: 50px;
