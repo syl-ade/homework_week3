@@ -90,6 +90,10 @@ p{
   line-height: 1.5;
   text-align: center;
 }
+
+.about-me p{
+  text-align: justify;
+}
 img{
   max-height: 200px;
 }
@@ -310,4 +314,4 @@ margin-top: 20px;
     .container {
       padding: 0 30px;
     }
-    }
+    
