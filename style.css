@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #a9c4c6;
+  --primary-color: #1f1b30;
   --secondary-color: #fff8f1;
   --additional-color: #1C474A;
   --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -12,7 +12,9 @@ body{
    margin: 20px 30px ;
 }
 
-
+.footer{
+  font-size: 11px;
+}
 
 h2,
 h3, h4, h5 {
@@ -157,37 +159,44 @@ float: right;
   justify-content: center;
 }
 
-.navigation-links a {
+
+
+.btn-dark {
+  width: 87px;
   margin: 20px;
   border-radius: 4px;
   padding: 10px 10px;
   text-decoration: none;
-}
-
-.contact-link {
   font-family: var(--primary-font);
-
+text-align: center;
   background: var(--primary-color);
+  border: 1px solid;
+  border-color: var(--secondary-color);
   box-shadow: var(--box-shadow);
   color: white;
   max-height: 50px;
 
 }
-.contact-link:hover{
+.btn-dark:hover{
   background:var(--secondary-color);
   color: var(--primary-color);
 }
 
-.about-link {
+.btn-light {
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 10px;
+  text-decoration: none;
   font-family: var(--primary-font);
-
+  border: 1px solid;
+  border-color: var(--primary-color);
   background: var(--secondary-color);
   color: var(--primary-color);
   box-shadow: var(--box-shadow);
   max-height: 50px;
 
 }
-.about-link:hover{
+.btn-light:hover{
   background: var(--primary-color);
   color: var(--secondary-color);
 }
@@ -233,7 +242,7 @@ h4{
     margin-top: 40px;
  }
  p{
-   font-size: 15px;
+   font-size: 18px;
  }
  img{
   margin-top: 20px;
@@ -249,11 +258,15 @@ h4{
  
 }
 @media (max-width: 576px){
+  .btn-dark{
+    width: 70px;
+    font-size: 11px;
+  }
   .navbar{
     padding: 0 30px;
   }
   p{
-    font-size: 15px;
+    font-size: 18px;
   }
   img{
 margin-top: 20px;
@@ -284,19 +297,9 @@ margin-top: 20px;
     
     
     h4,h5{
-      font-size: 15px;
+      font-size: 20px;
     }
-    .contact-link{
-      text-align: center;
-      font-size: 10px;
-
-    }
-    .about-link{
-      text-align: center;
-      font-size: 10px;
-      
-    }
-     .email-link{
+         .email-link{
       font-size: 20px;
     }
     .nav-link{
