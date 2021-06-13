@@ -40,15 +40,18 @@ h3, h4, h5 {
 }
 form {
   margin: 0 auto;
-  width: 500px; 
+  max-width: 500px; 
   text-align: center;
 }
 
 #contact-form{
-      margin: 0 auto;
-    width:80%;
+    margin: 0 auto;
+    max-width:100%;
+    padding: 0 auto;
 }
-
+ #contact-form p{
+   margin-bottom: 5px;
+ }
 
 h2 {
   font-family: var(--primary-font);
@@ -187,7 +190,10 @@ margin-top:60px;
   justify-content: center;
 }
 
+.form-btn {
+  font-family:var(--primary-font);
 
+}
 
 .btn-dark {
   width: 95px;
