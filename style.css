@@ -1,7 +1,7 @@
 
 html
 {
-height: 100%;
+  height: 100%;
 }
 
 :root {
@@ -15,25 +15,29 @@ height: 100%;
 body{
   position: relative;
   height: 100%;
-   background-color: var(--primary-color);
+  background-color: var(--primary-color);
    margin: 0px 30px ;
-}
-
-footer{
-  font-size: 11px;
-  position:absolute;
+  }
+  
+  footer{
+    font-size: 11px;
+    position:absolute;
    bottom:0;
    width:100%;
    height:60px;
- }
-
-h2,
-h3, h4, h5 {
-  text-align: center;
-  color: var(--secondary-color);
-
-}
-
+  }
+  
+  h2,
+  h3, h4, h5 {
+    text-align: center;
+    color: var(--secondary-color);
+    
+  }
+  
+  .navbar a{
+    float: right !important;
+    
+   }
 .f-oswald{
   font-family: var(--primary-font);
 
@@ -107,16 +111,19 @@ margin-bottom: 40px;
 }
 
 
+
 p{
   font-family: var(--secondary-font);
   color: var(--secondary-color);
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
   text-align: center;
 }
 
 .about-me p{
+  font-size: 16px;
+
   text-align: justify;
 }
 img{
@@ -136,6 +143,8 @@ a:focus,a:active {
 
 
 div.hero{
+  position: relative;
+  z-index: -1;
   margin: auto;
   height: 65%;
   display: flex;
@@ -146,6 +155,11 @@ div.hero{
  
 
 }
+
+.nav-link {
+  text-align: right;
+}
+
 div.projects{
 margin-top:60px;
 }
@@ -155,10 +169,7 @@ margin-top:60px;
   max-width: 800px;
   }
  
- .navbar-nav{
-   float: right;
- }
-
+ 
 .nav-link,
 .nav-item {
   font-family: var(--primary-font);
@@ -275,7 +286,7 @@ h4{
     margin-top: 40px;
  }
  p{
-   font-size: 18px;
+   font-size: 16px;
  }
  
 
@@ -296,7 +307,7 @@ h4{
 
   }
   p{
-    font-size: 18px;
+    font-size: 16px;
   }
   img{
 margin-top: 20px;
@@ -312,6 +323,8 @@ margin-top: 20px;
     .navbar-toggler{
       max-width: 40px;
       max-height: 40px;
+  box-shadow: none !important;
+
     }
 
     .navbar-toggler-icon{
