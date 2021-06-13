@@ -13,7 +13,6 @@ html
 }
 
 body{
-  position: relative;
   height: 100%;
   background-color: var(--primary-color);
    margin: 0px 30px ;
@@ -143,7 +142,6 @@ a:focus,a:active {
 
 
 div.hero{
-  position: relative;
   z-index: -1;
   margin: auto;
   height: 65%;
